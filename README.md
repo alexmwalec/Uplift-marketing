@@ -1,9 +1,7 @@
 # Uplift Marketing
 
-Welcome to the **Uplift Marketing** project! 🚀  
+Welcome to the **Uplift Marketing** project! 
 This repository contains all the code for the Uplift Marketing website.
-
----
 
 ## Tech Stack
 
@@ -33,5 +31,5 @@ How to Start
 
 1. Clone the repository:
 ```bash
-
+git@github.com:alexmwalec/Uplift-marketing.git
 cd uplift-marketing
