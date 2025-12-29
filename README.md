@@ -1,16 +1,37 @@
-# React + Vite
+# Uplift Marketing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Uplift Marketing** project! 🚀  
+This repository contains all the code for the Uplift Marketing website.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- React.js – For building the user interface  
+- Tailwind CSS – For styling
+- Lucide/React Icons --For cean and scalable Icons
+- Express.js – For backend API  
+- PostgreSQL – For storing data  
+- Git & GitHub – Version control with branches
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Branches
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Branch       | Responsibility                 |
+|-------------|--------------------------------|
+| homepage     | Homepage UI & components       |
+| about-us     | About page content & layout    |
+| services     | Services page layout           |
+| contact-us   | Contact form & API integration |
+
+Do not push directly to `main`.  
+> Work on your assigned branch and create a Pull Request to merge into `main`.
+
+
+How to Start
+
+1. Clone the repository:
+```bash
+
+cd uplift-marketing
