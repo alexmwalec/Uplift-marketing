@@ -34,5 +34,6 @@ How to Start
 git@github.com:alexmwalec/Uplift-marketing.git
 cd uplift-marketing
 
-npm start
+npm install
+npm install -D autoprefixer
 npm run dev
