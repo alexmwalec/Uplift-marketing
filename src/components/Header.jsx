@@ -1,4 +1,3 @@
- import React from "react";
 import Layer3 from "../assets/images/Layer3.png";
 
 const Header = () => {
