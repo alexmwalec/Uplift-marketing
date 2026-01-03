@@ -19,7 +19,7 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen font-sans text-gray-800">
-      {/* --- NAVBAR --- */}
+      
       <nav className="flex items-center justify-between px-10 py-4 bg-white sticky top-0 z-50 shadow-sm">
         <div className="flex items-center gap-2">
           <div className="bg-blue-900 p-1 rounded-md text-white font-bold text-xl">UP</div>
