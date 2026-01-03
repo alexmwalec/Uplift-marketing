@@ -1,17 +1,25 @@
-import React from "react";
+ import React from "react";
+import Layer3 from "../assets/images/Layer3.png";
 
 const Header = () => {
   return (
     <header className="w-full bg-white shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         
-        {/* Logo / Title */}
-        <div className="text-xl font-bold text-gray-800">
-          MyApp
+        {/* Logo + Text */}
+        <div className="flex items-center space-x-3">
+          {/* Logo Image */}
+          <img src={Layer3} alt="MyApp Logo" className="h-10 w-auto" />
+
+          {/* Text next to logo */}
+          <div className="flex flex-col leading-tight">
+            <span className="font-bold text-l text-blue-600">UPLIFT</span>
+            <span className="text-s text-gray-500">Marketing Agency</span>
+          </div>
         </div>
 
         {/* Navigation */}
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex space-x-10">
           <a href="#" className="text-gray-600 hover:text-blue-600">
             Home
           </a>
@@ -26,10 +34,14 @@ const Header = () => {
           </a>
         </nav>
 
-        {/* Button */}
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
-          Login
-        </button>
+        {/* Search Box */}
+        <div className="ml-4 relative">
+          <input
+            type="text"
+            placeholder="Search..."
+            className="pl-3 pr-3 py-2 w-40 rounded-full bg-gray-100 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all"
+          />
+        </div>
       </div>
     </header>
   );
