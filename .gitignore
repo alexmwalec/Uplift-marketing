@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 # dependencies && # vite cache
 node_modules/
 .vite/
+=======
+# dependencies
+node_modules/
+#vite cache
+.vite/
+>>>>>>> 7f02955 (Editing gitignore)
