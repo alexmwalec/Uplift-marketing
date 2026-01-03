@@ -4,10 +4,12 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
+import Header from "./components/Header";
 
 function App() {
   return (
     <Router>
+       <Header />
       <main className="min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />

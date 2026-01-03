@@ -1,0 +1,3 @@
+# dependencies && # vite cache
+node_modules/
+.vite/
