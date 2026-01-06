@@ -3,12 +3,13 @@ import Layer3 from "../assets/images/Layer3.png";
 
 const Header = () => {
   return (
-    <header className="w-full bg-white shadow-md">
+     <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         
         {/* Logo + Text */}
         <div className="flex items-center space-x-3">
-          {/* Logo Image */}
+          
           <img src={Layer3} alt="MyApp Logo" className="h-10 w-auto" />
 
           {/* Text next to logo */}
