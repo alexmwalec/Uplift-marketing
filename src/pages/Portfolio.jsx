@@ -1,4 +1,4 @@
-import { Search, ChevronRight } from 'lucide-react';
+import {ChevronRight } from 'lucide-react';
 import portfolio from "../assets/images/portfolio.jpg";
 import Royalsteel from "../assets/images/Royal steel3.jpeg";
 const Portfolio = () => {
@@ -19,22 +19,6 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen font-sans text-gray-800">
-      
-      <nav className="flex items-center justify-between px-10 py-4 bg-white sticky top-0 z-50 shadow-sm">
-        <div className="flex items-center gap-2">
-          <div className="bg-blue-900 p-1 rounded-md text-white font-bold text-xl">UP</div>
-          <span className="font-bold text-blue-900 uppercase text-xs leading-tight">Uplift<br/>Marketing Agency</span>
-        </div>
-        <div className="hidden md:flex gap-8 text-sm font-medium">
-          <a href="#" className="hover:text-blue-600">Home</a>
-          <a href="#" className="hover:text-blue-600">About Us</a>
-          <a href="#" className="hover:text-blue-600">Services</a>
-          <a href="#" className="text-blue-600 border-b-2 border-blue-600">Portfolio</a>
-          <a href="#" className="hover:text-blue-600">Contacts</a>
-        </div>
-        <Search className="w-5 h-5 text-gray-500 cursor-pointer" />
-      </nav>
-
       {/* --- HERO SECTION --- */}
       <section className="relative h-[500px] flex items-center bg-gray-900">
         {/* Background Image with Overlay */}
