@@ -1,5 +1,5 @@
  import React, { useState, useEffect } from 'react';
-import Footer from '../components/footer.jsx';
+import Footer from '../components/footer';
 import LandingImage from '../assets/images/LandingImage.png';
 import Rectangle28 from '../assets/images/Rectangle28.png';
 import Communication from '../assets/images/Communication.jpg';
