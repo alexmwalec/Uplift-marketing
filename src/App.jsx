@@ -7,7 +7,9 @@ import Portfolio from "./pages/Portfolio";
 import Header from "./components/Header";
 
 function App() {
-  return (
+  return ( 
+
+    
     <Router>
        <Header />
       <main className="min-h-screen">
