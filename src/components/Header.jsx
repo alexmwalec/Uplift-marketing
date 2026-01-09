@@ -1,5 +1,5 @@
- import React from "react";
 import Layer3 from "../assets/images/Layer3.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -21,18 +21,17 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="hidden md:flex space-x-10">
-          <a href="#" className="text-gray-600 hover:text-blue-600">
-            Home
-          </a>
-          <a href="#" className="text-gray-600 hover:text-blue-600">
-            About
-          </a>
-          <a href="#" className="text-gray-600 hover:text-blue-600">
+          <Link to="/" className="text-gray-600 hover:text-blue-600">Home</Link>
+          <Link to="/about" className="text-gray-600 hover:text-blue-600">About</Link>
+          <Link to="/services" className="text-gray-600 hover:text-blue-600">
             Services
-          </a>
-          <a href="#" className="text-gray-600 hover:text-blue-600">
+          </Link>
+          <Link to="/portfolio" className="text-gray-600 hover:text-blue-600">
+            Portfolio
+          </Link>
+          <Link to="/contact" className="text-gray-600 hover:text-blue-600">
             Contact
-          </a>
+          </Link>
         </nav>
 
         {/* Search Box */}
