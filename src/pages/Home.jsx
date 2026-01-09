@@ -1,5 +1,5 @@
  import React, { useState, useEffect } from 'react';
-import Footer from '../components/Footer';
+import Footer from '../components/footer.jsx';
 import LandingImage from '../assets/images/LandingImage.png';
 import Rectangle28 from '../assets/images/Rectangle28.png';
 import Communication from '../assets/images/Communication.jpg';
@@ -124,12 +124,6 @@ function Home() {
       </section>
 
       <Footer />
-
-      <div>
-        <Link className="font-bold text-3xl text-blue-500 hover:text-orange-500" to="/portfolio">
-          Go to Portfolio
-        </Link>
-      </div>
     </div>
     
   );
