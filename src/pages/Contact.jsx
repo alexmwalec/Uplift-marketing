@@ -75,12 +75,10 @@ const Contact = () => {
           <div className="inline-block px-6 py-2 mb-6 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
             <span className="text-white text-sm font-medium">Get In Touch</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
-            Let's Start a <span className="text-blue-300">Conversation</span>
+          <h1 className="lg:text-3xl font-semibold text-white mb-4 leading-tight">
+            We would Love to 
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Have questions? We're here to help. Reach out and let's create something amazing together.
-          </p>
+           <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">Hear From You</span>
         </div>
       </section>
 
@@ -259,21 +257,6 @@ const Contact = () => {
                     </p>
                   </div>
                 )}
-              </div>
-
-              {/* Map/Additional Info */}
-              <div className="mt-10 bg-gradient-to-r from-gray-50 to-white rounded-2xl p-8 border border-gray-100">
-                <h3 className="font-semibold text-gray-900 mb-4">Our Location</h3>
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <FaMapMarkerAlt className="text-3xl text-blue-600 mx-auto mb-3" />
-                    <p className="text-gray-700 font-medium">New York Office</p>
-                    <p className="text-gray-600 text-sm">123 Business Ave, Suite 100</p>
-                  </div>
-                </div>
-                <p className="text-sm text-gray-500 mt-4 text-center">
-                  * Map integration available with Google Maps API
-                </p>
               </div>
             </div>
           </div>
