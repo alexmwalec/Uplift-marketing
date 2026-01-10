@@ -59,7 +59,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen font-sans text-gray-800">
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center justify-center bg-gradient-to-r from-blue-900 to-indigo-800 overflow-hidden">
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Background Image with Gradient Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -67,7 +67,7 @@ const Contact = () => {
             alt="Contact Background" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-indigo-800/80"></div>
+          <div className="absolute inset-0 "></div>
         </div>
         
         {/* Hero Content */}
