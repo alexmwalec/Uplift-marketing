@@ -1,12 +1,15 @@
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import portfolio from "../assets/images/portfolio.jpg";
 import Royalsteel from "../assets/images/Royal steel1.jpeg";
+import Footer from "../components/footer";
 
 const Portfolio = () => {
   const projects = [
     {
       title: "Royal Steel Company Limited",
       image: Royalsteel,
+      slug:"/portfolio/royalsteel"
     },
     {
       title: "Gianis Construction and Consultancy",
@@ -67,38 +70,44 @@ const Portfolio = () => {
             creatives.
           </p>
         </div>
+<div className="grid md:grid-cols-3 gap-8 mb-20">
+  {projects.map((item, index) => (
+    <div
+      key={index}
+      className="bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 flex flex-col"
+    >
+      {/* Image clickable */}
+      <Link to={item.slug} className="block h-56 overflow-hidden">
+        <img
+          src={item.image}
+          alt={item.title}
+          className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+        />
+      </Link>
 
-        {/* --- PROJECT GRID --- */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
-          {projects.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-100 flex flex-col"
-            >
-              <div className="h-56 overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                />
-              </div>
+      <div className="p-6 text-left flex flex-col justify-between flex-grow">
+        <h4 className="font-bold text-gray-800 text-lg leading-tight mb-4">
+          {item.title}
+        </h4>
 
-              <div className="p-6 text-left flex flex-col justify-between flex-grow">
-                <h4 className="font-bold text-gray-800 text-lg leading-tight mb-4">
-                  {item.title}
-                </h4>
+        <div className="flex items-center justify-between mt-auto">
+          <span className="text-sm text-gray-400">See more...</span>
 
-                <div className="flex items-center justify-between mt-auto">
-                  <span className="text-sm text-gray-400">See more...</span>
-                  <button className="bg-blue-700 text-white p-2 rounded-full hover:bg-blue-800 transition">
-                    <ChevronRight className="w-4 h-4" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
+          {/* Chevron clickable */}
+          <Link
+            to={item.slug}
+            className="bg-blue-700 text-white p-2 rounded-full hover:bg-blue-800 transition"
+          >
+            <ChevronRight className="w-4 h-4" />
+          </Link>
         </div>
+      </div>
+    </div>
+  ))}
+</div>
+
       </main>
+      <Footer />
     </div>
   );
 };
