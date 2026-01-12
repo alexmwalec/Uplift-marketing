@@ -4,9 +4,9 @@ function Footer() {
   return (
     <footer className="bg-blue-800 text-white">
       <div className="max-w-7xl mx-auto px-6 py-8">
-        {/* All sections in one row */}
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-          {/* INFORMATION Column */}
+          
           <div>
             <h3 className="text-base font-bold mb-3 text-white">INFORMATION</h3>
             <ul className="space-y-1">
@@ -16,7 +16,7 @@ function Footer() {
     </a>
   </li>
   <li>
-    <a href="/services#business-packages" className="text-gray-300 hover:text-white transition text-sm">
+    <a href="/services" className="text-gray-300 hover:text-white transition text-sm">
       Business Packages
     </a>
   </li>
@@ -26,7 +26,7 @@ function Footer() {
     </a>
   </li>
   <li>
-    <a href="/services#website-packages" className="text-gray-300 hover:text-white transition text-sm">
+    <a href="/services#digital-marketing" className="text-gray-300 hover:text-white transition text-sm">
       Website Packages
     </a>
   </li>
