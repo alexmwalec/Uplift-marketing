@@ -59,16 +59,16 @@ function Footer() {
             
                       {/* Text next to logo */}
                       <div className="flex flex-col leading-tight">
-                        <span className="font-bold text-l text-blue-600">UPLIFT</span>
-                        <span className="text-s text-gray-500">Marketing Agency</span>
+                        <span className="font-bold text-l text-blue-300">UPLIFT</span>
+                        <span className="text-s text-white">Marketing Agency</span>
                       </div>
                     
               
             </div>
 
-            {/* Copyright centered in the middle on desktop, below on mobile */}
+          
             <div className="text-center mb-4 md:mb-0">
-              <p className="text-gray-300 text-sm">
+              <p className="text-white text-sm">
                 Copyright 2026 © UPLIFT Marketing Agency Company. All Rights Reserved
               </p>
             </div>
