@@ -69,7 +69,7 @@ function Footer() {
             {/* Copyright centered in the middle on desktop, below on mobile */}
             <div className="text-center mb-4 md:mb-0">
               <p className="text-gray-300 text-sm">
-                Copyright 2024 - 2025 © UPLIFT Marketing Agency Company. All Rights Reserved
+                Copyright 2026 © UPLIFT Marketing Agency Company. All Rights Reserved
               </p>
             </div>
 
