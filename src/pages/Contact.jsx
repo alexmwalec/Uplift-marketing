@@ -121,23 +121,7 @@ const Contact = () => {
                   </div>
                 ))}
               </div>
-
-              {/* Social Media */}
-              <div className="mt-10 p-6 bg-gradient-to-br from-gray-50 to-white rounded-xl border border-gray-100">
-                <h3 className="font-semibold text-gray-900 mb-4">Follow Us</h3>
-                <div className="flex space-x-4">
-                  {['Twitter', 'LinkedIn', 'Instagram', 'Facebook'].map((platform) => (
-                    <button
-                      key={platform}
-                      className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-blue-100 hover:text-blue-600 transition-colors"
-                    >
-                      <span className="text-sm font-medium">{platform.charAt(0)}</span>
-                    </button>
-                  ))}
-                </div>
-              </div>
             </div>
-
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <div className="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-gray-100">
