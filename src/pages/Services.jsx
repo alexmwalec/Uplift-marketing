@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import {
   ArrowRight,
   Download,
@@ -109,12 +110,41 @@ const Services = () => {
     }
   ];
 
-
   const scrollingPackages = [...packages, ...packages];
 
   return (
     <div className="bg-white text-slate-900 font-sans">
-        {/* ================= DIGITAL MARKETING ================= */}
+
+      {/* ================= HELMET (ADDED ONLY) ================= */}
+      <Helmet>
+        <title>Our Services | Uplift Marketing Agency</title>
+        <meta
+          name="description"
+          content="Digital Marketing, Graphic Design & Branding, Content Marketing and Marketing Strategy services by Uplift Marketing Agency."
+        />
+      </Helmet>
+
+      {/* ================= HERO SECTION (ADDED ONLY) ================= */}
+      <section className="relative min-h-[70vh] flex items-center bg-gray-900">
+        <div className="absolute inset-0">
+          <img
+            src={Livemarketing}
+            alt="Uplift Marketing Services"
+            className="w-full h-full object-cover opacity-40"
+          />
+        </div>
+
+        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
+            Our Services
+          </h1>
+          <p className="text-lg md:text-xl text-slate-200 max-w-3xl mx-auto">
+            We help businesses grow through digital marketing, branding, content creation, and strategic planning.
+          </p>
+        </div>
+      </section>
+
+      {/* ================= DIGITAL MARKETING (UNCHANGED) ================= */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="mb-16">
           <h1 className="text-center text-5xl font-extrabold text-blue-800 mb-6">
@@ -157,7 +187,6 @@ const Services = () => {
           </button>
         </div>
       </section>
-
       <hr className="border-gray-300 max-w-7xl mx-auto" />
       {/* ================= BRANDING PACKAGES ================= */}
       <section className="max-w-7xl mx-auto px-6 py-24">
