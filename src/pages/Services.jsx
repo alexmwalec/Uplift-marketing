@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import {
   ArrowRight,
   Download,
@@ -115,7 +116,6 @@ const Services = () => {
   return (
     <div className="bg-white text-slate-900 font-sans">
 
-      {/* ================= HELMET (ADDED ONLY) ================= */}
       <Helmet>
         <title>Our Services | Uplift Marketing Agency</title>
         <meta
@@ -124,7 +124,6 @@ const Services = () => {
         />
       </Helmet>
 
-      {/* ================= HERO SECTION (ADDED ONLY) ================= */}
       <section className="relative min-h-[70vh] flex items-center bg-gray-900">
         <div className="absolute inset-0">
           <img
@@ -144,7 +143,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* ================= DIGITAL MARKETING (UNCHANGED) ================= */}
+      {/* ================= DIGITAL MARKETING ================= */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="mb-16">
           <h1 className="text-center text-5xl font-extrabold text-blue-800 mb-6">
@@ -241,9 +240,9 @@ const Services = () => {
             Click here to download the document
           </button>
 
-          <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-10 py-4 rounded-full font-bold flex items-center gap-2 shadow-xl transition">
+         <Link to="/contact"><button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-10 py-4 rounded-full font-bold flex items-center gap-2 shadow-xl transition">
             Let's Grow Your Brand <ArrowRight className="w-5 h-5" />
-          </button>
+          </button></Link> 
         </div>
       </section>
          {/* ================= Content Marketing ================= */}
@@ -277,9 +276,9 @@ const Services = () => {
         </div>
        <div className="flex justify-center mt-10">
   <div className="w-full max-w-5xl flex justify-end">
-    <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
+   <Link to="/contact"> <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
       Work with us <ArrowRight className="w-5 h-5" />
-    </button>
+    </button></Link>
   </div>
 </div>
       </section>
@@ -315,9 +314,9 @@ const Services = () => {
         </div>
        <div className="flex justify-center mt-10">
   <div className="w-full max-w-5xl flex justify-end">
-    <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
+   <Link to="/contact"><button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
       Work with us <ArrowRight className="w-5 h-5" />
-    </button>
+    </button></Link> 
   </div>
 </div>
    <br/>
@@ -326,14 +325,10 @@ const Services = () => {
       <br/>
       <p className=" text-justify text-gray-600"> Uplift Marketing Agency has various packages for various business levels such as The Seedling,the Momentum, The Titan, and the Flash Packages.WE also give The Ads On package for clients  interested
         to take their business further.Click the Link below to download the package details.</p>
-        <div className="mt-16 flex flex-col sm:flex-row items-center justify-between gap-6 bg-slate-50 p-8 rounded-3xl">
+        <div className="mt-16 flex flex-col sm:flex-row items-center justify-between gap-6  p-8 rounded-3xl">
           <button className="flex items-center gap-3 text-slate-600 font-bold hover:text-blue-900 transition">
             <Download className="w-6 h-6" />
             Click here to download the document
-          </button>
-
-          <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-10 py-4 rounded-full font-bold flex items-center gap-2 shadow-xl transition">
-            Get Started<ArrowRight className="w-4 h-4" />
           </button>
     </div>
     <br/>
