@@ -124,6 +124,7 @@ const Services = () => {
         />
       </Helmet>
 
+    
       <section className="relative min-h-[70vh] flex items-center bg-gray-900">
         <div className="absolute inset-0">
           <img
@@ -144,7 +145,7 @@ const Services = () => {
       </section>
 
       {/* ================= DIGITAL MARKETING ================= */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
+      <section id="digital-marketing" className="max-w-7xl mx-auto px-6 py-20">
         <div className="mb-16">
           <h1 className="text-center text-5xl font-extrabold text-blue-800 mb-6">
             Digital Marketing
@@ -186,9 +187,11 @@ const Services = () => {
           </button>
         </div>
       </section>
+
       <hr className="border-gray-300 max-w-7xl mx-auto" />
+
       {/* ================= BRANDING PACKAGES ================= */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
+      <section id="branding" className="max-w-7xl mx-auto px-6 py-24">
         <div className="mb-16 text-center">
           <h2 className="text-5xl font-extrabold text-blue-800 mb-4">
             Graphic Design & Branding
@@ -245,8 +248,9 @@ const Services = () => {
           </button></Link> 
         </div>
       </section>
-         {/* ================= Content Marketing ================= */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
+
+      {/* ================= CONTENT MARKETING ================= */}
+      <section id="content-marketing" className="max-w-7xl mx-auto px-6 py-20">
         <div className="mb-16">
           <h1 className="text-5xl text-center font-extrabold text-blue-800 mb-6">
             Content Marketing
@@ -258,33 +262,34 @@ const Services = () => {
 
         <div className="space-y-12">
          <div className="flex justify-center">
-  <div className="relative w-full max-w-5xl">
-    <img
-      src={Livemarketing}
-      alt="Live Content Marketing"
-      className="
-        w-full
-        h-[320px] sm:h-[420px]
-        object-cover
-        rounded-3xl
-        shadow-2xl
-      "
-    />
-  </div>
-</div>
-
+          <div className="relative w-full max-w-5xl">
+            <img
+              src={Livemarketing}
+              alt="Live Content Marketing"
+              className="
+                w-full
+                h-[320px] sm:h-[420px]
+                object-cover
+                rounded-3xl
+                shadow-2xl
+              "
+            />
+          </div>
+        </div>
         </div>
        <div className="flex justify-center mt-10">
-  <div className="w-full max-w-5xl flex justify-end">
-   <Link to="/contact"> <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
-      Work with us <ArrowRight className="w-5 h-5" />
-    </button></Link>
-  </div>
-</div>
+        <div className="w-full max-w-5xl flex justify-end">
+         <Link to="/contact"> <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
+            Work with us <ArrowRight className="w-5 h-5" />
+          </button></Link>
+        </div>
+      </div>
       </section>
 
       <hr className="border-gray-300 max-w-7xl mx-auto" />
-      <section className="max-w-7xl mx-auto px-6 py-20">
+
+      {/* ================= MARKETING STRATEGY ================= */}
+      <section id="marketing-strategy" className="max-w-7xl mx-auto px-6 py-20">
         <div className="mb-16">
           <h1 className="text-5xl text-center font-extrabold text-blue-800 mb-6">
             Marketing Strategy
@@ -296,47 +301,49 @@ const Services = () => {
 
         <div className="space-y-12">
          <div className="flex justify-center">
-  <div className="relative w-full max-w-5xl">
-    <img
-      src={MarketingStrategy}
-      alt="Live Content Marketing"
-      className="
-        w-full
-        h-[320px] sm:h-[420px]
-        object-cover
-        rounded-3xl
-        shadow-2xl
-      "
-    />
-  </div>
-</div>
-
+          <div className="relative w-full max-w-5xl">
+            <img
+              src={MarketingStrategy}
+              alt="Live Content Marketing"
+              className="
+                w-full
+                h-[320px] sm:h-[420px]
+                object-cover
+                rounded-3xl
+                shadow-2xl
+              "
+            />
+          </div>
+        </div>
         </div>
        <div className="flex justify-center mt-10">
-  <div className="w-full max-w-5xl flex justify-end">
-   <Link to="/contact"><button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
-      Work with us <ArrowRight className="w-5 h-5" />
-    </button></Link> 
-  </div>
-</div>
-   <br/>
-   <br/> 
+        <div className="w-full max-w-5xl flex justify-end">
+         <Link to="/contact"><button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
+            Work with us <ArrowRight className="w-5 h-5" />
+          </button></Link> 
+        </div>
+      </div>
+
+      <br/>
+      <br/> 
       <h2 className=" font-semibold text-blue-600 text-3xl">Let’s dive into our business Packages</h2>
       <br/>
-      <p className=" text-justify text-gray-600"> Uplift Marketing Agency has various packages for various business levels such as The Seedling,the Momentum, The Titan, and the Flash Packages.WE also give The Ads On package for clients  interested
-        to take their business further.Click the Link below to download the package details.</p>
-        <div className="mt-16 flex flex-col sm:flex-row items-center justify-between gap-6  p-8 rounded-3xl">
-          <button className="flex items-center gap-3 text-slate-600 font-bold hover:text-blue-900 transition">
-            <Download className="w-6 h-6" />
-            Click here to download the document
-          </button>
-    </div>
-    <br/>
-    <br/>
+      <p className=" text-justify text-gray-600"> 
+        Uplift Marketing Agency has various packages for various business levels such as The Seedling, the Momentum, The Titan, and the Flash Packages. We also give The Ads On package for clients interested
+        to take their business further. Click the Link below to download the package details.
+      </p>
+      <div className="mt-16 flex flex-col sm:flex-row items-center justify-between gap-6  p-8 rounded-3xl">
+        <button className="flex items-center gap-3 text-slate-600 font-bold hover:text-blue-900 transition">
+          <Download className="w-6 h-6" />
+          Click here to download the document
+        </button>
+      </div>
+      <br/>
+      <br/>
       </section>
-     <Footer />
+
+      <Footer />
     </div>
-       
   );
 };
 

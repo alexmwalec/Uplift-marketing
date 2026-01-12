@@ -1,4 +1,5 @@
 import Layer3 from '../assets/images/Layer3.png';
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-blue-800 text-white">
@@ -9,11 +10,28 @@ function Footer() {
           <div>
             <h3 className="text-base font-bold mb-3 text-white">INFORMATION</h3>
             <ul className="space-y-1">
-              <li><a href="/company-profile" className="text-gray-300 hover:text-white transition text-sm">Company Profile</a></li>
-              <li><a href="/business-packages" className="text-gray-300 hover:text-white transition text-sm">Business Packages</a></li>
-              <li><a href="/branding-packages" className="text-gray-300 hover:text-white transition text-sm">Branding Packages</a></li>
-              <li><a href="/website-packages" className="text-gray-300 hover:text-white transition text-sm">Website Packages</a></li>
-            </ul>
+  <li>
+    <a href="/services#digital-marketing" className="text-gray-300 hover:text-white transition text-sm">
+      Company Profile
+    </a>
+  </li>
+  <li>
+    <a href="/services#business-packages" className="text-gray-300 hover:text-white transition text-sm">
+      Business Packages
+    </a>
+  </li>
+  <li>
+    <a href="/services#branding" className="text-gray-300 hover:text-white transition text-sm">
+      Branding Packages
+    </a>
+  </li>
+  <li>
+    <a href="/services#website-packages" className="text-gray-300 hover:text-white transition text-sm">
+      Website Packages
+    </a>
+  </li>
+</ul>
+
           </div>
 
           {/* LEGAL Column */}
@@ -39,11 +57,10 @@ function Footer() {
           <div>
             <h3 className="text-base font-bold mb-3 text-white">SOCIAL MEDIA</h3>
             <ul className="space-y-1">
-              <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition text-sm">Facebook</a></li>
-              <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition text-sm">Instagram</a></li>
-              <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition text-sm">Twitter</a></li>
-              <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition text-sm">Pinterest</a></li>
-              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition text-sm">LinkedIn</a></li>
+              <li><a href="https://www.facebook.com/share/1D3JTTx1CH/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition text-sm">Facebook</a></li>
+              <li><a href="https://www.instagram.com/uplift_marketing_agency?igsh=ZGR4MHg3cTZxNjll" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition text-sm">Instagram</a></li>
+              <li><a href="https://x.com/agency_upl25776" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition text-sm">Twitter</a></li>
+              <li><a href="" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition text-sm">Tiktok</a></li>
             </ul>
           </div>
         </div>
