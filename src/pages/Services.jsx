@@ -1,9 +1,12 @@
-function Services() {
-  return (
-    <div>
-      <h1>Our Services</h1>
-      <p>Discover the range of services we offer to help your business grow.</p>
-    </div>
-  );
+import Footer from "../components/footer";
+
+const Services = () => {
+  return(
+   <div>
+    <br/>
+    <h1>Services Page</h1>
+    <Footer />
+   </div>
+  )
 }
 export default Services;
