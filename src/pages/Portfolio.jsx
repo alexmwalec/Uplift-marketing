@@ -1,7 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import portfolio from "../assets/images/portfolio.jpg";
-import Royalsteel from "../assets/images/Royal steel1.jpeg";
+import Royalsteel from "../assets/images/Royal1.jpeg";
 import Footer from "../components/footer";
 
 const Portfolio = () => {
