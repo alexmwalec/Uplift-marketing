@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   ArrowRight,
   Download,
@@ -13,6 +13,20 @@ import MarketingStrategy from "../assets/images/Marketing.jpg";
 import Footer from "../components/footer";
 
 const Services = () => {
+  const location = useLocation();
+
+  // Scroll to hash when route changes
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location]);
+
   const marketingServices = [
     {
       id: 1,
@@ -115,7 +129,6 @@ const Services = () => {
 
   return (
     <div className="bg-white text-slate-900 font-sans">
-
       <Helmet>
         <title>Our Services | Uplift Marketing Agency</title>
         <meta
@@ -124,7 +137,7 @@ const Services = () => {
         />
       </Helmet>
 
-    
+      {/* ================= HERO/HEADER ================= */}
       <section className="relative min-h-[70vh] flex items-center bg-gray-900">
         <div className="absolute inset-0">
           <img
@@ -166,9 +179,7 @@ const Services = () => {
                   {service.id}
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">
-                    {service.title}
-                  </h3>
+                  <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
                   <p className="text-slate-500 max-w-2xl mb-3">
                     {service.description}
                   </p>
@@ -218,9 +229,7 @@ const Services = () => {
                   {pkg.id}
                 </div>
 
-                <h4 className="text-xl font-black mb-4 leading-tight">
-                  {pkg.name}
-                </h4>
+                <h4 className="text-xl font-black mb-4 leading-tight">{pkg.name}</h4>
 
                 <ul className="space-y-3 flex-grow">
                   {pkg.features.map((feature, idx) => (
@@ -243,9 +252,11 @@ const Services = () => {
             Click here to download the document
           </button>
 
-         <Link to="/contact"><button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-10 py-4 rounded-full font-bold flex items-center gap-2 shadow-xl transition">
-            Let's Grow Your Brand <ArrowRight className="w-5 h-5" />
-          </button></Link> 
+          <Link to="/contact">
+            <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-10 py-4 rounded-full font-bold flex items-center gap-2 shadow-xl transition">
+              Let's Grow Your Brand <ArrowRight className="w-5 h-5" />
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -261,29 +272,26 @@ const Services = () => {
         </div>
 
         <div className="space-y-12">
-         <div className="flex justify-center">
-          <div className="relative w-full max-w-5xl">
-            <img
-              src={Livemarketing}
-              alt="Live Content Marketing"
-              className="
-                w-full
-                h-[320px] sm:h-[420px]
-                object-cover
-                rounded-3xl
-                shadow-2xl
-              "
-            />
+          <div className="flex justify-center">
+            <div className="relative w-full max-w-5xl">
+              <img
+                src={Livemarketing}
+                alt="Live Content Marketing"
+                className="w-full h-[320px] sm:h-[420px] object-cover rounded-3xl shadow-2xl"
+              />
+            </div>
           </div>
         </div>
+
+        <div className="flex justify-center mt-10">
+          <div className="w-full max-w-5xl flex justify-end">
+            <Link to="/contact">
+              <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
+                Work with us <ArrowRight className="w-5 h-5" />
+              </button>
+            </Link>
+          </div>
         </div>
-       <div className="flex justify-center mt-10">
-        <div className="w-full max-w-5xl flex justify-end">
-         <Link to="/contact"> <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
-            Work with us <ArrowRight className="w-5 h-5" />
-          </button></Link>
-        </div>
-      </div>
       </section>
 
       <hr className="border-gray-300 max-w-7xl mx-auto" />
@@ -300,46 +308,43 @@ const Services = () => {
         </div>
 
         <div className="space-y-12">
-         <div className="flex justify-center">
-          <div className="relative w-full max-w-5xl">
-            <img
-              src={MarketingStrategy}
-              alt="Live Content Marketing"
-              className="
-                w-full
-                h-[320px] sm:h-[420px]
-                object-cover
-                rounded-3xl
-                shadow-2xl
-              "
-            />
+          <div className="flex justify-center">
+            <div className="relative w-full max-w-5xl">
+              <img
+                src={MarketingStrategy}
+                alt="Live Content Marketing"
+                className="w-full h-[320px] sm:h-[420px] object-cover rounded-3xl shadow-2xl"
+              />
+            </div>
           </div>
         </div>
-        </div>
-       <div className="flex justify-center mt-10">
-        <div className="w-full max-w-5xl flex justify-end">
-         <Link to="/contact"><button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
-            Work with us <ArrowRight className="w-5 h-5" />
-          </button></Link> 
-        </div>
-      </div>
 
-      <br/>
-      <br/> 
-      <h2 className=" font-semibold text-blue-600 text-3xl">Let’s dive into our business Packages</h2>
-      <br/>
-      <p className=" text-justify text-gray-600"> 
-        Uplift Marketing Agency has various packages for various business levels such as The Seedling, the Momentum, The Titan, and the Flash Packages. We also give The Ads On package for clients interested
-        to take their business further. Click the Link below to download the package details.
-      </p>
-      <div className="mt-16 flex flex-col sm:flex-row items-center justify-between gap-6  p-8 rounded-3xl">
-        <button className="flex items-center gap-3 text-slate-600 font-bold hover:text-blue-900 transition">
-          <Download className="w-6 h-6" />
-          Click here to download the document
-        </button>
-      </div>
-      <br/>
-      <br/>
+        <div className="flex justify-center mt-10">
+          <div className="w-full max-w-5xl flex justify-end">
+            <Link to="/contact">
+              <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
+                Work with us <ArrowRight className="w-5 h-5" />
+              </button>
+            </Link>
+          </div>
+        </div>
+
+        <br />
+        <br />
+
+        <h2 className="font-semibold text-blue-600 text-3xl">Let’s dive into our business Packages</h2>
+        <br />
+        <p className="text-justify text-gray-600">
+          Uplift Marketing Agency has various packages for various business levels such as The Seedling, the Momentum, The Titan, and the Flash Packages. We also give The Ads On package for clients interested to take their business further. Click the Link below to download the package details.
+        </p>
+        <div className="mt-16 flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl">
+          <button className="flex items-center gap-3 text-slate-600 font-bold hover:text-blue-900 transition">
+            <Download className="w-6 h-6" />
+            Click here to download the document
+          </button>
+        </div>
+        <br />
+        <br />
       </section>
 
       <Footer />
