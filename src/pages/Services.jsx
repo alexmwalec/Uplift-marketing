@@ -6,6 +6,9 @@ import {
   Search,
   MousePointer2
 } from "lucide-react";
+import Livemarketing from "../assets/images/Livemarketing.jpg";
+import MarketingStrategy from "../assets/images/Marketing.jpg";
+import Footer from "../components/footer";
 
 const Services = () => {
   const marketingServices = [
@@ -149,7 +152,7 @@ const Services = () => {
         </div>
 
         <div className="mt-12 flex justify-end">
-          <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
+          <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
             Let's Work Together <ArrowRight className="w-5 h-5" />
           </button>
         </div>
@@ -209,12 +212,12 @@ const Services = () => {
             Click here to download the document
           </button>
 
-          <button className="bg-purple-600 hover:bg-purple-700 text-white px-10 py-4 rounded-full font-bold flex items-center gap-2 shadow-xl transition">
+          <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-10 py-4 rounded-full font-bold flex items-center gap-2 shadow-xl transition">
             Let's Grow Your Brand <ArrowRight className="w-5 h-5" />
           </button>
         </div>
       </section>
-         {/* ================= DIGITAL MARKETING ================= */}
+         {/* ================= Content Marketing ================= */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="mb-16">
           <h1 className="text-5xl text-center font-extrabold text-blue-800 mb-6">
@@ -226,39 +229,90 @@ const Services = () => {
         </div>
 
         <div className="space-y-12">
-          <h2 className="text-3xl font-bold text-blue-900">We handle:</h2>
+         <div className="flex justify-center">
+  <div className="relative w-full max-w-5xl">
+    <img
+      src={Livemarketing}
+      alt="Live Content Marketing"
+      className="
+        w-full
+        h-[320px] sm:h-[420px]
+        object-cover
+        rounded-3xl
+        shadow-2xl
+      "
+    />
+  </div>
+</div>
 
-          <div className="space-y-10">
-            {marketingServices.map((service) => (
-              <div key={service.id} className="flex gap-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600">
-                  {service.id}
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-2">
-                    {service.title}
-                  </h3>
-                  <p className="text-slate-500 max-w-2xl mb-3">
-                    {service.description}
-                  </p>
-                  <button className="flex items-center gap-2 text-slate-400 font-bold hover:text-blue-600 transition uppercase tracking-wider text-xs">
-                    See Our Portfolio <ArrowRight className="w-4 h-4" />
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
-
-        <div className="mt-12 flex justify-end">
-          <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
-            Let's Work Together <ArrowRight className="w-5 h-5" />
-          </button>
-        </div>
+       <div className="flex justify-center mt-10">
+  <div className="w-full max-w-5xl flex justify-end">
+    <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
+      Work with us <ArrowRight className="w-5 h-5" />
+    </button>
+  </div>
+</div>
       </section>
 
       <hr className="border-gray-300 max-w-7xl mx-auto" />
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <div className="mb-16">
+          <h1 className="text-5xl text-center font-extrabold text-blue-800 mb-6">
+            Marketing Strategy
+          </h1>
+          <p className="text-gray-600 text-lg text-center">
+            Custom strategies aligned with your business goals, ensuring measurable growth and sustainability.
+          </p>
+        </div>
+
+        <div className="space-y-12">
+         <div className="flex justify-center">
+  <div className="relative w-full max-w-5xl">
+    <img
+      src={MarketingStrategy}
+      alt="Live Content Marketing"
+      className="
+        w-full
+        h-[320px] sm:h-[420px]
+        object-cover
+        rounded-3xl
+        shadow-2xl
+      "
+    />
+  </div>
+</div>
+
+        </div>
+       <div className="flex justify-center mt-10">
+  <div className="w-full max-w-5xl flex justify-end">
+    <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
+      Work with us <ArrowRight className="w-5 h-5" />
+    </button>
+  </div>
+</div>
+   <br/>
+   <br/> 
+      <h2 className=" font-semibold text-blue-600 text-3xl">Let’s dive into our business Packages</h2>
+      <br/>
+      <p className=" text-justify text-gray-600"> Uplift Marketing Agency has various packages for various business levels such as The Seedling,the Momentum, The Titan, and the Flash Packages.WE also give The Ads On package for clients  interested
+        to take their business further.Click the Link below to download the package details.</p>
+        <div className="mt-16 flex flex-col sm:flex-row items-center justify-between gap-6 bg-slate-50 p-8 rounded-3xl">
+          <button className="flex items-center gap-3 text-slate-600 font-bold hover:text-blue-900 transition">
+            <Download className="w-6 h-6" />
+            Click here to download the document
+          </button>
+
+          <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-10 py-4 rounded-full font-bold flex items-center gap-2 shadow-xl transition">
+            Get Started<ArrowRight className="w-4 h-4" />
+          </button>
     </div>
+    <br/>
+    <br/>
+      </section>
+     <Footer />
+    </div>
+       
   );
 };
 
