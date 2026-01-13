@@ -60,7 +60,7 @@ function Footer() {
               <li><a href="https://www.facebook.com/share/1D3JTTx1CH/" target="_blank" className="text-gray-300 text-sm">Facebook</a></li>
               <li><a href="https://www.instagram.com/uplift_marketing_agency" target="_blank" className="text-gray-300 text-sm">Instagram</a></li>
               <li><a href="https://x.com/agency_upl25776" target="_blank" className="text-gray-300 text-sm">Twitter</a></li>
-              <li><a href="#" className="text-gray-300 text-sm">TikTok</a></li>
+              <li><a href="https://www.tiktok.com/@uplift.marketing?_r=1&_t=ZM-92qhR5psDZz" className="text-gray-300 text-sm">TikTok</a></li>
             </ul>
           </div>
 
