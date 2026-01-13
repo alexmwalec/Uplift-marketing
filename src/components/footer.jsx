@@ -17,9 +17,10 @@ function Footer() {
     <footer className="bg-blue-800 text-white">
       <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-          {/* INFORMATION Column */}
+
+          {/* INFORMATION */}
           <div>
-            <h3 className="text-base font-bold mb-3 text-white">INFORMATION</h3>
+            <h3 className="text-base font-bold mb-3">INFORMATION</h3>
             <ul className="space-y-1">
               <li>
                 <Link to="/services#digital-marketing" className="text-gray-300 hover:text-white transition text-sm">
@@ -44,9 +45,9 @@ function Footer() {
             </ul>
           </div>
 
-          {/* LEGAL Column */}
+          {/* LEGAL */}
           <div>
-            <h3 className="text-base font-bold mb-3 text-white">LEGAL</h3>
+            <h3 className="text-base font-bold mb-3">LEGAL</h3>
             <ul className="space-y-1">
               <li><Link to="/terms-of-use" className="text-gray-300 hover:text-white transition text-sm">Terms of use</Link></li>
               <li><Link to="/business-license" className="text-gray-300 hover:text-white transition text-sm">Business License</Link></li>
@@ -55,17 +56,17 @@ function Footer() {
             </ul>
           </div>
 
-          {/* SUPPORT Column */}
+          {/* SUPPORT */}
           <div>
-            <h3 className="text-base font-bold mb-3 text-white">SUPPORT</h3>
+            <h3 className="text-base font-bold mb-3">SUPPORT</h3>
             <ul className="space-y-1">
               <li><Link to="/contact" className="text-gray-300 hover:text-white transition text-sm">Contact</Link></li>
             </ul>
           </div>
 
-          {/* SOCIAL MEDIA Column */}
+          {/* SOCIAL */}
           <div>
-            <h3 className="text-base font-bold mb-3 text-white">SOCIAL MEDIA</h3>
+            <h3 className="text-base font-bold mb-3">SOCIAL MEDIA</h3>
             <ul className="space-y-1">
               <li>
                 <a href="https://www.facebook.com/share/1D3JTTx1CH/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition text-sm">
@@ -89,7 +90,6 @@ function Footer() {
               </li>
             </ul>
           </div>
-        </div>
 
         {/* Separator line */}
         <div className="border-t border-blue-700 pt-6">
@@ -111,7 +111,12 @@ function Footer() {
 
             <div className="hidden md:block w-64"></div>
           </div>
+
+          <p className="text-sm mt-4 md:mt-0">
+            © 2026 UPLIFT Marketing Agency. All rights reserved.
+          </p>
         </div>
+
       </div>
     </footer>
   );
