@@ -83,7 +83,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition text-sm">
+                <a href="https://www.tiktok.com/@uplift.marketing?_r=1&_t=ZM-92qhR5psDZz" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition text-sm">
                   Tiktok
                 </a>
               </li>
