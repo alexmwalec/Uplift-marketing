@@ -4,6 +4,7 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
+import RoyalSteel from "./pages/RoyalSteel";
 import Header from "./components/Header";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/royalsteel" element={<RoyalSteel />} />
         </Routes>
       </main>
     </Router>
