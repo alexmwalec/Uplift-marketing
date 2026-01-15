@@ -14,56 +14,17 @@ import teamimage from "../assets/images/team.jpg";
 import Commimage from "../assets/images/Comm.jpg";
 
 function AboutUs() {
-  const slides = [
-    { image: LandingImage, alt: "Landing Image" },
-    { image: ContentMarketing, alt: "Content Marketing" },
-    { image: Analysis2, alt: "Analysis" },
-    { image: Analysing, alt: "Analysing" },
-    { image: Communication, alt: "Communication" },
-  ];
-
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [fade, setFade] = useState(true);
-
-  useEffect(() => {
-    const slideInterval = setInterval(() => {
-      setFade(false);
-      setTimeout(() => {
-        setCurrentSlide((prev) => (prev + 1) % slides.length);
-        setFade(true);
-      }, 500);
-    }, 5000);
-
-    return () => clearInterval(slideInterval);
-  }, [slides.length]);
-
-  const nextSlide = () => {
-    setFade(false);
-    setTimeout(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-      setFade(true);
-    }, 300);
-  };
-
-  const prevSlide = () => {
-    setFade(false);
-    setTimeout(() => {
-      setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-      setFade(true);
-    }, 300);
-  };
-
+   
   return (
     <>
       {/* Slideshow Section */}
       <div className="w-full h-[500px] relative overflow-hidden">
         {/* Slideshow Image */}
         <img
-          src={slides[currentSlide].image}
-          alt={slides[currentSlide].alt}
-          className={`w-full h-full object-cover transition-opacity duration-500 ${
-            fade ? "opacity-100" : "opacity-0"
-          }`}
+          src={   Communication  }
+          alt="CommunicationImage"
+          className="w-full h-full object-cover"
+        
         />
 
         {/* Text Overlay */}
@@ -71,19 +32,8 @@ function AboutUs() {
           Transforming Brands Since 2020
         </div>
 
-        {/* Controls */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded"
-        >
-          ◀
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded"
-        >
-          ▶
-        </button>
+        
+        
       </div>
  
       <div className="max-w-7xl mx-auto px-4 py-12 md:py-16">
@@ -251,7 +201,7 @@ function AboutUs() {
           </div>
         </section> 
 <section className="w-full mt-16">
-  <div className="relative w-full h-[420px]">
+  <div className="relative w-full h-[800px]">
   <img
       src={teamimage}
       alt="Team collaboration"
