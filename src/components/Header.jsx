@@ -1,7 +1,8 @@
  import { useState } from "react";
-import Layer3 from "../assets/images/Layer3.png";
+ 
 import { NavLink } from "react-router-dom";  
 import { X, Menu } from "lucide-react";
+import Logo from "../assets/images/Logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Header = () => {
         <div className="grid grid-cols-3 items-center">
           
           <div className="flex items-center space-x-3">
-            <img src={Layer3} alt="MyApp Logo" className="h-10 w-auto" />
+            <img src={Logo} alt="MyApp Logo" className="h-10 w-auto" />
             <div className="flex flex-col leading-tight">
               <span className="font-bold text-lg sm:text-xl text-blue-600">UPLIFT</span>
               <span className="text-sm text-gray-500">Marketing Agency</span>
