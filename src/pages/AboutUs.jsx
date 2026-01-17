@@ -39,7 +39,7 @@ function AboutUs() {
       <div className="max-w-7xl mx-auto px-4 py-12 md:py-16">
      
         <section className="mb-12 md:mb-16">
-          <h1 className="text-3xl md:text-4xl font-bold text-blue-800 mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-6">
             About Uplift Marketing Agency
           </h1>
           <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
