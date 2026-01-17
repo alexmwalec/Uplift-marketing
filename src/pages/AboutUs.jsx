@@ -5,10 +5,10 @@ import Communication from "../assets/images/Communication.jpg";
 import LandingImage from "../assets/images/LandingImage.png";
 import ContentMarketing from "../assets/images/Livemarketing.jpg";
 import image1 from "../assets/images/image1.png";
-import layer1 from "../assets/images/layer1.png";
-import layer3 from "../assets/images/layer3.png";
-import layer2 from "../assets/images/layer2.png";
-import layer4 from "../assets/images/layer4.png";
+import layer1 from "../assets/images/Layer1.png";
+import layer3 from "../assets/images/Layer3.png";
+import layer2 from "../assets/images/Layer2.png";
+import layer4 from "../assets/images/Layer4.png";
 import Footer from "../components/footer";
 import teamimage from "../assets/images/team.jpg";
 import Commimage from "../assets/images/Comm.jpg";
@@ -56,7 +56,7 @@ function AboutUs() {
   return (
     <>
       {/* Slideshow Section */}
-      <div className="w-full h-[500px] relative overflow-hidden">
+      <div className="w-full h-[700px] relative overflow-hidden">
         {/* Slideshow Image */}
         <img
           src={slides[currentSlide].image}
