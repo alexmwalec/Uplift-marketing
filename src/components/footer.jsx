@@ -1,4 +1,4 @@
-import Layer3 from '../assets/images/Layer3.png';
+import Logo from '../assets/images/Logo.png';
 
 function Footer() {
   return (
@@ -69,7 +69,7 @@ function Footer() {
         {/* Bottom */}
         <div className="border-t border-blue-700 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-3">
-            <img src={Layer3} alt="UPLIFT Logo" className="h-10" />
+            <img src={Logo} alt="UPLIFT Logo" className="h-10" />
             <div>
               <p className="font-bold text-blue-300">UPLIFT</p>
               <p className="text-sm">Marketing Agency</p>

@@ -9,13 +9,14 @@ import Analysing from '../assets/images/Analysing.jpg';
 import User1 from '../assets/images/User1.jpg';  
 import Female1 from '../assets/images/Female1.jpg';
 import Female2 from '../assets/images/Female2.jpg';
+import ContactImage from '../assets/images/Contact.jpg';
 
 import { Link } from "react-router-dom";  
 
 function Home() {
   // Images for the slideshow
   const slides = [
-    { image: LandingImage, alt: "Landing Image" },
+    { image:  ContactImage, alt: "contact image" },
     { image: ContentMarketing, alt: "Content Marketing" },
     { image: Analysis2, alt: "Analysis" },
     { image: Analysing, alt: "Analysing" },
