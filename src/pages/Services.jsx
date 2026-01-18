@@ -4,9 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 import {
   ArrowRight,
   Download,
-  Layout,
-  Search,
-  MousePointer2
 } from "lucide-react";
 import Livemarketing from "../assets/images/Livemarketing.jpg";
 import MarketingStrategy from "../assets/images/Marketing.jpg";

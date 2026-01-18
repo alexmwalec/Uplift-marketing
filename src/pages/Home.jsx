@@ -158,12 +158,12 @@ function Home() {
           </div>
 
           <div className="flex justify-center md:justify-start">
-            <a
-              href="/book-free-call"
+            <Link
+              to="/contact"
               className="bg-purple-600 hover:bg-purple-700 text-white text-lg font-semibold px-10 py-4 rounded-full transition inline-block"
             >
               Book A Free Strategy Call
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -200,11 +200,11 @@ function Home() {
               </p>
 
               {/* Fixed href to be more specific */}
-              <a href="/services/digital-marketing"
+              <Link to="/services#digital-marketing"
                 className="inline-flex items-center mt-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full transition"
               >
                 Learn more <span className="ml-2">→</span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -228,11 +228,11 @@ function Home() {
               </p>
 
               {/* Fixed href to be service-specific */}
-              <a href="/services/graphic-design"
+              <Link to="/services#branding"
                 className="inline-flex items-center mt-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full transition"
               >
                 Learn more <span className="ml-2">→</span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -256,12 +256,12 @@ function Home() {
               </p>
 
               {/* Fixed href to be service-specific */}
-              <a
-                href="/services/content-marketing"
+              <Link
+                to="/services#content-marketing"
                 className="inline-flex items-center mt-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full transition"
               >
                 Learn more <span className="ml-2">→</span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -285,12 +285,12 @@ function Home() {
               </p>
 
               {/* Fixed href to be service-specific */}
-              <a
-                href="/services/marketing-strategy"
+              <Link
+                to="/services#marketing-strategy"
                 className="inline-flex items-center mt-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-full transition"
               >
                 Learn more <span className="ml-2">→</span>
-              </a>
+              </Link>
             </div>
           </div>
 
