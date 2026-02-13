@@ -12,7 +12,7 @@ import Footer from "../components/footer";
 const Services = () => {
   const location = useLocation();
 
-  // Scroll to hash when route changes
+
   useEffect(() => {
     if (location.hash) {
       const element = document.querySelector(location.hash);
@@ -180,19 +180,26 @@ const Services = () => {
                   <p className="text-slate-500 max-w-2xl mb-3">
                     {service.description}
                   </p>
-                  <button className="flex items-center gap-2 text-slate-400 font-bold hover:text-blue-600 transition uppercase tracking-wider text-xs">
+                  <Link to="/portfolio"><button className="flex items-center gap-2 text-slate-400 font-bold hover:text-blue-600 transition uppercase tracking-wider text-xs">
                     See Our Portfolio <ArrowRight className="w-4 h-4" />
-                  </button>
+                  </button></Link>
+                  
                 </div>
               </div>
             ))}
           </div>
         </div>
-
-        <div className="mt-12 flex justify-end">
-          <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 shadow-lg transition">
-            Let's Work Together <ArrowRight className="w-5 h-5" />
+       <div className="mt-16 flex flex-col sm:flex-row items-center justify-between gap-6 bg-slate-50 p-8 rounded-3xl">
+          <button className="flex items-center gap-3 text-slate-600 font-bold hover:text-blue-900 transition">
+            <Download className="w-6 h-6" />
+            Click here to download the document
           </button>
+
+          <Link to="/contact">
+            <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-10 py-4 rounded-full font-bold flex items-center gap-2 shadow-xl transition">
+              Let's Work Together<ArrowRight className="w-5 h-5" />
+            </button>
+          </Link>
         </div>
       </section>
 
