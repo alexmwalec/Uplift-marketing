@@ -33,7 +33,7 @@ const Contact = () => {
     {
       icon: <FaEnvelope className="text-xl" />,
       title: "Email",
-      details: ["upliftmarketingagent9@gmail.com"],
+      details:[<a href="mailto:upliftmarketingagent9@gmail.com" className="text-gray-600 hover:text-blue-600 transition-colors">upliftmarketingagent9@gmail.com</a>],
       description: "We'll respond within 24 hours"
     },
     {

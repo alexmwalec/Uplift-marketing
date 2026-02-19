@@ -12,6 +12,7 @@ import layer4 from "../assets/images/Layer4.png";
 import Footer from "../components/footer";
 import teamimage from "../assets/images/team.jpg";
 import Commimage from "../assets/images/Comm.jpg";
+import { Link } from "react-router-dom";
 
 function AboutUs() {
    
@@ -28,7 +29,7 @@ function AboutUs() {
         />
 
         {/* Text Overlay */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl md:text-5xl font-bold text-center drop-shadow-lg">
+        <div className="absolute top-1/2  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl md:text-5xl font-bold text-center drop-shadow-lg">
           Transforming Brands Since 2020
         </div>
 
@@ -142,62 +143,70 @@ function AboutUs() {
 
            <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300">
+               <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300">
   <img
     src={layer1}
-    alt="Proven Expertise"
-      className="w-24 h-24 mx-auto object-contain mb-4"
+    alt="Strategic Approach"
+    className="w-24 h-24 mx-auto object-contain mb-4"
   />
   <h3 className="text-xl font-semibold text-blue-800 mb-4">
-    Proven Expertise
+    Strategic Approach
   </h3>
   <p className="text-gray-600 leading-relaxed">
-    Our team brings years of industry<br />
-    We recognize that no two businesses experience and a track record of are the same, and we develop <strong>success</strong> in various industries.
+    We develop clear, data-driven marketing strategies tailored to your business
+    goals. Our approach ensures every campaign delivers measurable results and
+    long-term growth.
   </p>
-</div>          
-             <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300">
+</div>
+
+<div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300">
   <img
     src={layer2}
-    alt="Proven Expertise"
-      className="w-24 h-24 mx-auto object-contain mb-4"
+    alt="Creative Excellence"
+    className="w-24 h-24 mx-auto object-contain mb-4"
   />
   <h3 className="text-xl font-semibold text-blue-800 mb-4">
-    Proven Expertise
+    Creative Excellence
   </h3>
   <p className="text-gray-600 leading-relaxed">
-    Our team brings years of industry<br />
-    We recognize that no two businesses experience and a track record of are the same, and we develop <strong>success</strong> in various industries.
+    Our creative team produces compelling content and innovative campaigns that
+    capture attention, strengthen brand identity, and connect meaningfully with
+    your target audience.
   </p>
-</div>      
-              <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300">
+</div>
+
+<div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300">
   <img
     src={layer3}
-    alt="Proven Expertise"
-      className="w-24 h-24 mx-auto object-contain mb-4"
+    alt="Client-Focused Solutions"
+    className="w-24 h-24 mx-auto object-contain mb-4"
   />
   <h3 className="text-xl font-semibold text-blue-800 mb-4">
-    Proven Expertise
+    Client-Focused Solutions
   </h3>
   <p className="text-gray-600 leading-relaxed">
-    Our team brings years of industry<br />
-    We recognize that no two businesses experience and a track record of are the same, and we develop <strong>success</strong> in various industries.
+    We understand that every business is unique. That’s why we design customized
+    marketing solutions that align with your specific needs, challenges, and
+    vision.
   </p>
 </div>
-             <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300">
+
+<div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300">
   <img
     src={layer4}
-    alt="Proven Expertise"
-      className="w-24 h-24 mx-auto object-contain mb-4"
+    alt="Results-Driven Performance"
+    className="w-24 h-24 mx-auto object-contain mb-4"
   />
   <h3 className="text-xl font-semibold text-blue-800 mb-4">
-    Proven Expertise
+    Results-Driven Performance
   </h3>
   <p className="text-gray-600 leading-relaxed">
-    Our team brings years of industry<br />
-    We recognize that no two businesses experience and a track record of are the same, and we develop <strong>success</strong> in various industries.
+    We focus on delivering real impact. Through continuous analysis and
+    optimization, we ensure your marketing efforts generate growth, visibility,
+    and strong return on investment.
   </p>
 </div>
+
           </div>
         </section> 
 <section className="w-full mt-16">
@@ -215,10 +224,11 @@ function AboutUs() {
           various industries. We provide tailored marketing solutions designed to
           meet your unique goals and challenges.
         </p>
-        <button className="bg-pink-400 hover:bg-pink-600 transition-colors text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 whitespace-nowrap">
+        <Link to= '/contact'><button className="bg-pink-400 hover:bg-pink-600 transition-colors text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 whitespace-nowrap">
           Let work together
           <span className="text-xl">→</span>
-        </button>
+        </button></Link>
+        
       </div>
     </div>
   </div>
